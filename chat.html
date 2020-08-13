@@ -1,0 +1,39 @@
+<head>
+  <meta charset="utf-8">
+  <!-- Chat window Template adapted from Fabio Ottavianis sample chat window on Code Pen -->
+  <link rel="stylesheet" href="css/chatStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+<body>
+  <div>
+    
+    <div class="chat-menu">
+      <div class="chat-menu-title">
+        <h1>Available chats</h1>
+      </div>
+      
+    </div>
+    <div class="chat">
+      <div class="chat-title">
+        <h1 id="chatUserName"></h1>
+        <h2 id="chatId"></h2>
+        <span class="avatar material-icons">person</span>
+      </div>
+      <div class="messages">
+        <div class="messages-content"></div>
+      </div>
+      <div class="message-box">
+        <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+        <button type="submit" class="message-submit">Send</button>
+      </div>
+    
+    </div>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="node_modules/sendbird/SendBird.min.js"></script>
+<script type="module" src="chatController.js" async> </script> 
+</body>
